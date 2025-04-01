@@ -1,0 +1,69 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+#pdf-upload {
+    margin-top: 1rem;
+}
+
+.main-container {
+    display: flex;
+    height: 70vh;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.pdf-viewer {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ddd;
+    overflow: auto;
+}
+
+.notes-editor {
+    flex: 1;
+}
+
+#notes {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 1rem;
+}
+
+.ai-summary {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.summary-box {
+    min-height: 100px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        height: auto;
+    }
+}

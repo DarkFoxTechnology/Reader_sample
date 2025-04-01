@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>论文阅读助手</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>论文阅读助手</h1>
+        <input type="file" id="pdf-upload" accept=".pdf" />
+    </div>
+
+    <div class="main-container">
+        <div class="pdf-viewer" id="pdf-container"></div>
+        <div class="notes-editor">
+            <textarea id="notes" placeholder="在这里记录笔记..."></textarea>
+        </div>
+    </div>
+
+    <div class="ai-summary">
+        <h3>AI总结（预留功能）</h3>
+        <div class="summary-box" id="summary-box">
+            AI总结功能将在未来实现
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
